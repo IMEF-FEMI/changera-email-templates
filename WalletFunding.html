@@ -200,22 +200,21 @@
         <img class="logo-img"
             src="https://res.cloudinary.com/bitmama/image/upload/v1625816706/changera_landing/svgs/logo_keprot.svg" />
         <h3 class="title">
-            Hello (User first name),
+            Hello {{first_name}},
         </h3>
         <h3 class="title">
             Your wallet has been funded successfully! </h3>
 
         <div class="main-text">
             <div>
-                Your (insert wallet name) wallet has been successfully funded with (insert amount with currency) by
-                (insert sender’s
-                username)
+                Your {{wallet_name}} wallet has been successfully funded with {{amount}} by
+                {{sender_username}}
             </div>
 
             <div class="card-balance-container">
                 Card Balance:
                 <inline class="card-balance-amount">
-                    (Insert card Balance)
+                    {{card_balance}}
                 </inline>
             </div>
             <div class="love-changera">

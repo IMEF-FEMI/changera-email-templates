@@ -207,22 +207,22 @@
         <img class="logo-img"
             src="https://res.cloudinary.com/bitmama/image/upload/v1625816706/changera_landing/svgs/logo_keprot.svg" />
         <h3 class="title">
-            Hello (User first name),
+            Hello {{first_name}},
         </h3>
-        
 
-        <div class="main-text">You have successfully purchased data with your (insert wallet name). Here's the summary:
-</div>
+
+        <div class="main-text">You have successfully purchased data with your {{wallet_name}}. Here's the summary:
+        </div>
         <div class="main-text" style="margin-top: 20px;">
             <h4 class="transaction-heading">Transaction details</h4>
-            <div>Amount Debited: (Insert amount)</div>
-            <div>Description: Data Purchase</div>
-            <div>Reference: (insert reference)</div>
+            <div>Amount Debited: {{amount}}</div>
+            <div>Description: {{description}}</div>
+            <div>Reference: {{reference}}</div>
 
             <div class="card-balance-container">
                 Wallet Balance:
                 <inline class="card-balance-amount">
-                    (Insert card Balance)
+                    {{card_balance}}
                 </inline>
             </div>
             <div class="love-changera">

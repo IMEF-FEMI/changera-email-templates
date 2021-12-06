@@ -200,7 +200,7 @@
         <img class="logo-img"
             src="https://res.cloudinary.com/bitmama/image/upload/v1625816706/changera_landing/svgs/logo_keprot.svg" />
         <h3 class="title">
-            Hello (User first name),
+            Hello {{first_name}},
         </h3>
         <h3 class="title">
             Your Changera virtual card has been created!
@@ -212,27 +212,28 @@
 
 
 
-            <div class="main-text">
-                <div>
-                    Congratulations, your Changera Virtual Card has been successfully created!
-                    <div style="margin-top: 30px; margin-bottom: 30px;">Kindly note that this attracted (insert charges in wallet currency)</div>
-            
-                   
+        <div class="main-text">
+            <div>
+                Congratulations, your Changera Virtual Card has been successfully created!
+                <div style="margin-top: 30px; margin-bottom: 30px;">Kindly note that this attracted
+                    {{charge_in_wallet_currency}}</div>
 
-            
-                </div>
-            
-                <div class="card-balance-container">
-                    Card Balance:
-                    <inline class="card-balance-amount">
-                        (Insert card Balance)
-                    </inline>
-                </div>
-                <div class="love-changera">
-                    <h4>Love,</h4>
-                    <h4>Changera</h4>
-                </div>
+
+
+
             </div>
+
+            <div class="card-balance-container">
+                Card Balance:
+                <inline class="card-balance-amount">
+                    {{card_balance}}
+                </inline>
+            </div>
+            <div class="love-changera">
+                <h4>Love,</h4>
+                <h4>Changera</h4>
+            </div>
+        </div>
 
 
 

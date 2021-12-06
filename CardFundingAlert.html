@@ -201,7 +201,7 @@
         <img class="logo-img"
             src="https://res.cloudinary.com/bitmama/image/upload/v1625816706/changera_landing/svgs/logo_keprot.svg" />
         <h3 class="title">
-            Hello (User first name),
+            Hello {{first_name}},
         </h3>
         <h3 class="title">
             Card Funded Successfully!
@@ -209,13 +209,13 @@
 
         <div class="main-text">
             <div>
-                You have successfully funded your card with (insert amount)
+                You have successfully funded your card with {{amount}}
             </div>
 
             <div class="card-balance-container">
                 Card Balance:
                 <inline class="card-balance-amount">
-                    (Insert card Balance)
+                    {{card_balance}}
                 </inline>
             </div>
             <div class="love-changera">

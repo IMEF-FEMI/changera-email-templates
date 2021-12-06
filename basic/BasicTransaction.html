@@ -206,7 +206,7 @@
         <img class="logo-img"
             src="https://res.cloudinary.com/bitmama/image/upload/v1625816706/changera_landing/svgs/logo_keprot.svg" />
         <h3 class="title">
-            Hello (User first name),
+            Hello {{first_name}},
         </h3>
         <h3 class="title">
             Your Changera virtual card has been debited!
@@ -215,14 +215,14 @@
 
         <div class="main-text">
             <h4 class="transaction-heading">Transaction details</h4>
-            <div>Amount Debited: (Insert amount)</div>
-            <div>Description: (insert transaction name/details)</div>
-            <div>Reference: (insert reference)</div>
+            <div>Amount Debited: {{amount}}</div>
+            <div>Description: {{description}}</div>
+            <div>Reference: {{reference}}</div>
 
             <div class="card-balance-container">
                 Card Balance:
                 <inline class="card-balance-amount">
-                    (Insert card Balance)
+                    {{card_balance}}
                 </inline>
             </div>
             <div class="love-changera">

@@ -197,7 +197,7 @@
         <img class="logo-img"
             src="https://res.cloudinary.com/bitmama/image/upload/v1625816706/changera_landing/svgs/logo_keprot.svg" />
         <h3 class="title">
-            Hello (User first name),
+            Hello {{first_name}},
         </h3>
         <h3 class="title">
             Your transfer is on its way!
@@ -211,13 +211,13 @@
 
         <div class="main-text">
             <div>
-                You are sending (insert amount) to (insert receipient's username)
+                You are sending {{amount}} to {{recipient_username}}
             </div>
 
             <div class="card-balance-container">
                 Card Balance:
                 <inline class="card-balance-amount">
-                    (Insert card Balance)
+                    {{card_balance}}
                 </inline>
             </div>
             <div class="love-changera">
